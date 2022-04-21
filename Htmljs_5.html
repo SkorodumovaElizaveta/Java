@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="Ru-Ru">
-
 <head>
     <meta charset="utf-8">
     <title>Шаблон страницы</title>
@@ -8,7 +7,6 @@
     <meta name="author" content="from internet">
     <link rel="stylesheet" href="css\styles.css">
 </head>
-
 <body>
     <header>
         <hr>
@@ -24,7 +22,6 @@
             <h2>Заголовк контента</h2>
             <hr>
         </header>
-
         <article>
             <header>
                 <h3>Статья 1</h3>
@@ -46,7 +43,6 @@
                 </address>
             </footer>
         </article>
-
     </main>
     <footer>
         <hr>
@@ -54,23 +50,70 @@
         <hr>
     </footer>
     <script src="js\scripts.js"></script>
-
-<script>
-let infoPazient=["Иванов","Иван","Иванович", 15, "мая", 1974, "м"]
-console.log(infoPazient[0]);
-console.log(infoPazient[5]);
-  let lastname;
-lastname=prompt("Введите имя пациента", lastname);
-console.log(lastname);
-infoPazient[0]= lastname;
-console.log(infoPazient);
-var person = {
-    "SNILS 1": ["Иванов", "Иван", "Иванович", 15, "мая", 1974, "м"];
-    "SNILS 2": ["Сидоров", "Сидор", "Сидорович", 20, "мая", 1980, "м"],
-    "SNILS 3": ["Петрова", "Мария", "Ивановна", 1, "июня", 1975, "ж"],
+    <body>
+        <script>
+        let infoPazient=["Иванов","Иван","Иванович",15,"мая",1974,"м"];
+        console.log(infoPazient);
+        console.log(infoPazient[0]);
+        console.log(infoPazient[1]);
+        console.log(infoPazient[2]);
+        /*
+        let lastname;
+        lastname=prompt("Введите фамилию пациента", lastname);
+        console.log(lastname);
+        infoPazient[0]=lastname;
+        console.log(infoPazient);
+        */
+        var person={
+            "SNILS 1":["Иванов", "Иван", "Иванович", 15, "мая", 1974, "м"],
+            "SNILS 2":["Долматов","Олег","Викторович", 26,"июня",1989,"м"],
+            "SNILS 3":["Васильева","Наталья","Яновна", 3,"декабря",1993,"ж"],
     };
     console.log(person);
+    SNILS4=" SNILS 4"
+    person.SNILS4=[];
+    console.log(person);
 </script>
+<script>
+        let firstname;
+        firstname=prompt("Введите имя пациента",firstname);
+        //console.log(lastname);
+        infoPazient[1]=firstname;
+        console.log(infoPazient);
+        let middlename;
+        middlename=prompt("Введите отчество пациента",middlename);
+        //console.log(lastname);
+        infoPazient[2]=middlename;
+        console.log(infoPazient);
+        let date;
+        date=prompt("Введите день пациента",date);
+        //console.log(lastname);
+        infoPazient[3]=date;
+        console.log(infoPazient);
+        let month;
+        month=prompt("Введите месяц пациента",month);
+        //console.log(lastname);
+        infoPazient[4]=month;
+        console.log(infoPazient);
+        let year;
+        year=prompt("Введите год пациента", year);
+        //console.log(lastname);
+        infoPazient[5]=year;
+        console.log(infoPazient);
+        let gender;
+        gender=prompt("Введите пол пациента", gender);
+        //console.log(lastname);
+        infoPazient[6]=gender;
+        console.log(infoPazient);
+        let SNILS;
+        SNILS=prompt("Введите SNILS пациента",SNILS);
+        infoname=person[SNILS];
+        console/log(infoname);
+        alert("Информация о пациенте"+infoname);
+
+        </script>
+
 </body>
+
 
 </html>
